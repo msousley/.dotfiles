@@ -76,6 +76,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.zsh/aliases
 
 # User configuration
 
@@ -154,7 +155,7 @@ fi
 prompt_context() {} # remove user and machine identifier
 eval "$(zoxide init zsh)"
 
-bindkey '^[^I' autosuggest-accept
+bindkey '<C-Space>' autosuggest-accept
 
 PROMPT='%{$fg[cyan]%}%c$(git_prompt_info) %(!.%{$fg_bold[red]%}#.%{$fg_bold[red]%}❯%{$fg_bold[yellow]%}❯%{$fg_bold[green]%}❯)%{$reset_color%} '
 
