@@ -12,8 +12,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { import = "sameer.plugins" },
-  { import = "sameer.plugins.lsp" },
+  { import = "matts.plugins" },
+  { import = "matts.plugins.lsp" },
 }, {
   install = { colorscheme = { "gruvbox" } },
   change_detection = { notify = false },
