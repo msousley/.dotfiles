@@ -102,13 +102,6 @@ return {
       filetypes = { "python" },
     })
 
-    lspconfig["solargraph"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-      root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
-      filetypes = { "ruby" },
-    })
-
     lspconfig["graphql"].setup({
       capabilities = capabilities,
       on_attach = on_attach,

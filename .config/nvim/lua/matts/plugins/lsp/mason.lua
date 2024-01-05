@@ -28,7 +28,6 @@ return {
         "emmet_ls",
         "pyright",
         "graphql",
-        "solargraph",
         "angularls",
         "tailwindcss",
       },
@@ -43,7 +42,6 @@ return {
         "isort",
         "black",
         "eslint_d",
-        "rubocop",
         "ruff",
       },
 
