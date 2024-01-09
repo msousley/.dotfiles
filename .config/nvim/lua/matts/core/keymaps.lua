@@ -2,7 +2,18 @@ local keymap = vim.keymap
 
 vim.g.mapleader = " "
 
-keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+-- greatest remap ever
+keymap.set("x", "<leader>p", [["_dP]])
+
+-- next greatest remap ever : asbjornHaland
+keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+keymap.set("n", "<leader>Y", [["+Y]])
+
+keymap.set({ "n", "v" }, "<leader>d", [["_d]])
+
+-- This is going to get me cancelled
+keymap.set("i", "<C-c>", "<Esc>")
+
 keymap.set("n", "0", "^", { desc = "Goto first non empty character in line" })
 keymap.set("n", "<C-h>", "<C-w>h", { desc = "Select left split" })
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "Select lower split" })
