@@ -153,9 +153,4 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 export GOPRIVATE="bitbucket.org"
 
-export CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER=x86_64-linux-gnu-gcc
-export CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER=aarch64-linux-gnu-gcc
-export CARGO_TARGET_X86_64_UNKNOWN_LINUX_MUSL_LINKER=x86_64-linux-musl-gcc
-export CARGO_TARGET_AARCH64_UNKNOWN_LINUX_MUSL_LINKER=aarch64-linux-musl-gcc
-export RUSTFLAGS="-C link-args=-fstack-protector-all -lssp"
 
